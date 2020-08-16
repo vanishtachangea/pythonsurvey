@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Data App</title>
+    <head>
+        <link href="../static/css/main.css"  rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Collecting Data about covid-19</h1>
+            <h3>Please fill the entire statistics for covid-19</h3>
+            <form action="{{url_for('success')}}" method="post">
+                <p>Email<input title="Your email is safe with us" placeholder="Enter your email address" type="email" name="email" required></p>
+                <p>Have you been infected by corona virus<input title="Your data is safe with us" placeholder="Have you been infected by corona virus"  type="radio" name="infected_bool" ></p>
+                <p>Have you been impacted by corona economic crisis<input title="Your data is safe with us" placeholder="Have you been impacted by corona economic crisis" type="radio" name="economic_impact_bool" ></p>
+                <button type="submit">Submit</button>
+
+            </form>
+        </div>
+    </body>
+</html>
